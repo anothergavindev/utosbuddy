@@ -13,8 +13,8 @@ This document outlines the architectural standards, design patterns, directory s
 | **Styling** | Tailwind CSS + Shadcn UI | Utility-first CSS framework coupled with accessible, unstyled component primitives. |
 | **State Management** | *TBD* | Currently relying on React built-in state (`useState`, `useContext`, `useReducer`). |
 | **Data Validation** | Zod | Runtime schema validation for API requests, environment variables, and forms. |
-| **Database / ORM** | *TBD* | Data sources and ORM layers to be decided based on upcoming requirements. |
-| **Authentication** | Auth.js (NextAuth) / Clerk | Secure session management, OAuth providers, and role-based access control. |
+| **Database / ORM** | PostgreSQL + Prisma | Owned by the separate `utosbuddy-api` service. |
+| **Authentication** | `utosbuddy-api` session cookie | Email and password accounts. HTTP-only, Secure, SameSite=Strict signed cookie. Roles: customer, buddy, admin. |
 | **Testing** | Playwright | End-to-end (E2E) browser testing and integration flows. |
 | **CI/CD & Hosting** | GitHub Actions & Vercel | Automated testing, linting, continuous integration, and serverless hosting. |
 
@@ -23,6 +23,8 @@ This document outlines the architectural standards, design patterns, directory s
 ## 2. Project Directory Structure
 
 We adhere to the Next.js App Router paradigm, enforcing a clean layout where components, utility functions, and tests are logically structured.
+
+Accounts, sessions, and PostgreSQL live in the sibling API repository `utosbuddy-api`. The `app/api` folder in this web app is not that service.
 
 ```text
 ├── .github/workflows/          # GitHub Actions pipelines (lint, test, build, deploy)
@@ -86,9 +88,10 @@ We adhere to the Next.js App Router paradigm, enforcing a clean layout where com
 ## 5. Security Architecture
 
 * **Authentication & Authorization**:
-  * Passwords must be hashed using secure algorithms (e.g., bcrypt/Argon2).
-  * Session management relies on cryptographically signed HTTP-only, Secure, SameSite=Strict cookies.
-  * Role-Based Access Control (RBAC) enforced both at the middleware edge and within server actions/API routes.
+  * Accounts live in `utosbuddy-api` (Express), not in Next.js route handlers or Auth.js. The web app origin is allowed through CORS with credentials.
+  * Passwords are hashed with Argon2id. The hash is never logged or returned.
+  * The session cookie is a signed user id: HTTP-only, Secure, SameSite=Strict. It does not contain the password.
+  * Roles are `customer` (signup default), `buddy`, and `admin`.
 * **Data Validation & Sanitization**:
   * Every incoming request (Server Action payloads, Route Handler bodies, URL query parameters) must be validated using Zod schemas at runtime.
 * **Environment Variables**:
