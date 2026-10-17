@@ -1,0 +1,15 @@
+/** Shared, feature-agnostic types. Feature-specific types live in src/features/<feature>/types.ts. */
+
+/** Money as integer centavos. Use formatPeso() to display. */
+export type Centavos = number & { readonly __brand: "Centavos" };
+
+export type ISODateString = string;
+
+export type ID = string;
+
+export type UserRole = "customer" | "buddy" | "admin";
+
+export type Paginated<T> = {
+  items: T[];
+  nextCursor: string | null;
+};
