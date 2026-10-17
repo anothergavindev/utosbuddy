@@ -1,4 +1,4 @@
-/** Shared, feature-agnostic types. Feature-specific types live in src/features/<feature>/types.ts. */
+/** Global TypeScript type definitions shared across the app. */
 
 /** Money as integer centavos. Use formatPeso() to display. */
 export type Centavos = number & { readonly __brand: "Centavos" };
