@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -46,6 +47,19 @@ export default function LoginPage() {
             Log in
           </Button>
         </form>
+
+        <div className="relative my-6">
+          <div className="absolute inset-0 flex items-center" aria-hidden>
+            <span className="w-full border-t" />
+          </div>
+          <p className="relative mx-auto w-fit bg-card px-3 text-xs font-medium tracking-wide text-muted-foreground uppercase">
+            or
+          </p>
+        </div>
+
+        <Link href="/signup" className={buttonVariants({ variant: "outline", fullWidth: true })}>
+          Sign up instead
+        </Link>
       </CardContent>
     </Card>
   );
