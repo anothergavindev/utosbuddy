@@ -1,0 +1,22 @@
+{
+  "0": "Package Manifest & Media Hook",
+  "1": "Login Page & Form UI",
+  "2": "App Shell & Error Pages",
+  "3": "TypeScript Config",
+  "4": "Architecture & Project Rules",
+  "5": "Dev Dependencies",
+  "6": "Root Layout & Providers",
+  "7": "PH Locale Formatting",
+  "8": "Grilling Skills Family",
+  "9": "Runtime Dependencies",
+  "10": "npm Scripts",
+  "11": "Prettier Config",
+  "12": "Shared Domain Types",
+  "13": "Loading Spinner",
+  "14": "Badge Component",
+  "15": "Server Components & Perf",
+  "16": "Caveman Skill",
+  "17": "Auth & Middleware",
+  "18": "Validation (Zod, Env)",
+  "19": "PostCSS Config"
+}

@@ -1,0 +1,16 @@
+{
+  "0": "Package Manifest & Media Hook",
+  "3": "TypeScript Config",
+  "4": "Architecture & Project Rules",
+  "5": "Dev Dependencies",
+  "7": "PH Locale Formatting",
+  "8": "Grilling Skills Family",
+  "10": "npm Scripts",
+  "11": "Prettier Config",
+  "12": "Shared Domain Types",
+  "15": "Server Components & Perf",
+  "16": "Caveman Skill",
+  "17": "Auth & Middleware",
+  "18": "Validation (Zod, Env)",
+  "19": "PostCSS Config"
+}

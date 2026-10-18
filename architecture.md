@@ -30,10 +30,11 @@ Accounts, sessions, and PostgreSQL live in the sibling API repository `utosbuddy
 ├── .github/workflows/          # GitHub Actions pipelines (lint, test, build, deploy)
 ├── app/                        # Next.js App Router root
 │   ├── (auth)/                 # Route group for authentication flows (login, signup)
-│   ├── (dashboard)/            # Route group for authenticated user dashboard
+│   ├── (dashboard)/            # Route group for the signed-in app shell
+│   │   ├── home/page.tsx       # Home at /home (not / — that URL is the public landing)
+│   │   ├── profile/page.tsx    # Profile at /profile
 │   │   ├── settings/           # Settings page and sub-routes
-│   │   ├── layout.tsx          # Dashboard layout with sidebar and header
-│   │   └── page.tsx            # Dashboard home
+│   │   └── layout.tsx          # Sidebar and header
 │   ├── api/                    # API Route Handlers
 │   │   └── v1/                 # Versioned API endpoints
 │   ├── favicon.ico             # Global favicon
@@ -44,6 +45,10 @@ Accounts, sessions, and PostgreSQL live in the sibling API repository `utosbuddy
 │   ├── ui/                     # Shadcn UI primitives (Button, Dialog, Input, etc.)
 │   ├── providers/              # Context providers (Theme, Auth)
 │   └── layout/                 # Structural components (Navbar, Footer, Sidebar)
+├── config/                     # Static app values, not components
+│   ├── env.ts                  # Typed public environment variables
+│   ├── nav.ts                  # Sidebar and account links
+│   └── site.ts                 # Site name, tagline, and URL
 ├── hooks/                      # Custom React hooks (use-debounce, use-media-query)
 ├── lib/                        # Utility functions and shared helpers
 │   ├── utils.ts                # Helper functions (e.g., cn() for tailwind classes)
