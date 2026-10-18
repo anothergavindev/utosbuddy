@@ -50,13 +50,6 @@ export function Dashboard({ name, children }: DashboardProps) {
 
       <div className="flex min-w-0 flex-1 flex-col">
         <header className="flex h-14 items-center gap-2 border-b bg-card px-4">
-          <Dropdown triggerLabel="Account menu" trigger={<Avatar alt="" />}>
-            {accountLinks.map((link) => (
-              <DropdownItem key={link.href} href={link.href}>
-                {link.label}
-              </DropdownItem>
-            ))}
-          </Dropdown>
           <Button
             variant="ghost"
             size="icon"
@@ -66,6 +59,13 @@ export function Dashboard({ name, children }: DashboardProps) {
           >
             <Menu />
           </Button>
+          <Dropdown className="ml-auto" triggerLabel="Account menu" trigger={<Avatar alt="" />}>
+            {accountLinks.map((link) => (
+              <DropdownItem key={link.href} href={link.href}>
+                {link.label}
+              </DropdownItem>
+            ))}
+          </Dropdown>
         </header>
         <main className="flex-1 p-6">{children}</main>
       </div>

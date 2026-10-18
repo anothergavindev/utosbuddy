@@ -36,8 +36,8 @@
     "semantic_hash": ""
   },
   "app/error.tsx": {
-    "mtime": 1792228768.0,
-    "seen": 1792233792.447681,
+    "mtime": 1792228769.0,
+    "seen": 1792330914.8117409,
     "ast_hash": "eb1bc188c90f9c4bb5609f8f82afccef",
     "semantic_hash": "eb1bc188c90f9c4bb5609f8f82afccef"
   },
@@ -66,8 +66,8 @@
     "semantic_hash": "bc8dd4499b8a172f772c05650a8749e4"
   },
   "components/layout/container.tsx": {
-    "mtime": 1792228767.0,
-    "seen": 1792233792.447685,
+    "mtime": 1792228768.0,
+    "seen": 1792330914.8117461,
     "ast_hash": "37a4329918d148ac339ce14759e2fe8b",
     "semantic_hash": "37a4329918d148ac339ce14759e2fe8b"
   },
@@ -264,9 +264,9 @@
     "semantic_hash": "8bbbba638177a6e9bb56a17719ec8ab9"
   },
   "architecture.md": {
-    "mtime": 1792315022.0371976,
-    "seen": 1792329639.2496572,
-    "ast_hash": "3a48db5da543be6a53559840ff044275",
+    "mtime": 1792330912.5409694,
+    "seen": 1792330914.811857,
+    "ast_hash": "8b357ab9c91fbaf7c838f76a7ff95b20",
     "semantic_hash": ""
   },
   "app/(auth)/signup/page.tsx": {
@@ -309,12 +309,6 @@
     "mtime": 1792315022.037256,
     "seen": 1792329639.249554,
     "ast_hash": "d0b7491571d8c903b127ee4efec203d8",
-    "semantic_hash": ""
-  },
-  "components/layout/dashboard-nav.ts": {
-    "mtime": 1792315022.0367436,
-    "seen": 1792329639.249546,
-    "ast_hash": "d2e7f25081edf5508d19a3b3e47cfb1d",
     "semantic_hash": ""
   },
   ".claude/skills/vercel-react-best-practices/AGENTS.md": {
@@ -768,15 +762,27 @@
     "semantic_hash": ""
   },
   "components/layout/dashboard.tsx": {
-    "mtime": 1792329629.3640575,
-    "seen": 1792329639.249547,
-    "ast_hash": "78f516a4ef7739f2ec3d7eff7ca417bb",
+    "mtime": 1792330897.11999,
+    "seen": 1792330914.811747,
+    "ast_hash": "5fe7cc19f22cbbf95a3108bf95a540a9",
     "semantic_hash": ""
   },
   "components/layout/sidebar.tsx": {
-    "mtime": 1792329630.1437697,
-    "seen": 1792329639.249548,
-    "ast_hash": "1a6569f3424ef35fec32e72b82d11f75",
+    "mtime": 1792330898.0929768,
+    "seen": 1792330914.811748,
+    "ast_hash": "8708098249f31cf87d4491fa21c54e58",
+    "semantic_hash": ""
+  },
+  "config/nav.ts": {
+    "mtime": 1792330896.8253095,
+    "seen": 1792330914.811761,
+    "ast_hash": "d2e7f25081edf5508d19a3b3e47cfb1d",
+    "semantic_hash": ""
+  },
+  "AGENTS.md": {
+    "mtime": 1792329708.6256561,
+    "seen": 1792330914.8118541,
+    "ast_hash": "c98dbebb744eadc1acc4b9f58bfe0f42",
     "semantic_hash": ""
   }
 }

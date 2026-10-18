@@ -306,9 +306,9 @@
     "semantic_hash": ""
   },
   "components/ui/dropdown-menu.tsx": {
-    "mtime": 1792315022.037256,
-    "seen": 1792329639.249554,
-    "ast_hash": "d0b7491571d8c903b127ee4efec203d8",
+    "mtime": 1792332463.8966546,
+    "seen": 1792332467.8770208,
+    "ast_hash": "9339c8d087a4333399d9a4bdb9ec7217",
     "semantic_hash": ""
   },
   ".claude/skills/vercel-react-best-practices/AGENTS.md": {
@@ -762,9 +762,9 @@
     "semantic_hash": ""
   },
   "components/layout/dashboard.tsx": {
-    "mtime": 1792330897.11999,
-    "seen": 1792330914.811747,
-    "ast_hash": "5fe7cc19f22cbbf95a3108bf95a540a9",
+    "mtime": 1792332463.895641,
+    "seen": 1792332467.877014,
+    "ast_hash": "81de2fcd5c8ab9b7399d521a616606c4",
     "semantic_hash": ""
   },
   "components/layout/sidebar.tsx": {
@@ -774,9 +774,9 @@
     "semantic_hash": ""
   },
   "config/nav.ts": {
-    "mtime": 1792330896.8253095,
-    "seen": 1792330914.811761,
-    "ast_hash": "d2e7f25081edf5508d19a3b3e47cfb1d",
+    "mtime": 1792331252.1051478,
+    "seen": 1792332467.877028,
+    "ast_hash": "6a7d9d0f137509b3bb99417fd8afe91c",
     "semantic_hash": ""
   },
   "AGENTS.md": {

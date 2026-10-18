@@ -1,12 +1,12 @@
 # Graph Report - utosbuddy  (2026-10-18)
 
 ## Corpus Check
-- 128 files · ~34,188 words
+- 129 files · ~34,316 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 7 file(s) not represented in the graph (top: (none) 5, .example 1, .css 1)
 
 ## Summary
-- 488 nodes · 563 edges · 91 communities (20 shown, 71 thin omitted)
+- 490 nodes · 564 edges · 92 communities (19 shown, 73 thin omitted)
 - Extraction: 97% EXTRACTED · 3% INFERRED · 0% AMBIGUOUS · INFERRED: 17 edges (avg confidence: 0.87)
 - Token cost: 0 input · 0 output
 
@@ -18,7 +18,7 @@
 ## Community Hubs (Navigation)
 - Package Manifest & Media Hook
 - cn
-- app/layout.tsx
+- Button
 - TypeScript Config
 - Architecture & Project Rules
 - Dev Dependencies
@@ -29,6 +29,7 @@
 - npm Scripts
 - Prettier Config
 - Shared Domain Types
+- 6. Rendering Performance
 - next
 - Server Components & Perf
 - Caveman Skill
@@ -37,7 +38,7 @@
 - PostCSS Config
 - Quick Reference
 - 6. Rendering Performance
-- 3. Server-Side Performance
+- AGENTS.md
 - Sections
 - React Best Practices
 - async-cheap-condition-before-await.md
@@ -138,19 +139,19 @@
 - **Security architecture layers** — architecture_middleware, architecture_auth, architecture_zod_validation, architecture_env_validation [EXTRACTED 1.00]
 - **Grilling interview skill family** — _agents_skills_grill_me_skill_grill_me, _agents_skills_grill_with_docs_skill_grill_with_docs, _cursor_skills_grill_me_skill_grill_me, _agents_skills_grill_with_docs_skill_grilling_skill [INFERRED 0.85]
 
-## Communities (91 total, 71 thin omitted)
+## Communities (92 total, 73 thin omitted)
 
 ### Community 0 - "Package Manifest & Media Hook"
 Cohesion: 0.06
 Nodes (35): dependencies, class-variance-authority, clsx, lucide-react, next, react, react-dom, tailwind-merge (+27 more)
 
 ### Community 1 - "cn"
-Cohesion: 0.13
-Nodes (28): LoginPage(), metadata, metadata, SignupPage(), SignupForm(), Loading(), NotFound(), Badge() (+20 more)
+Cohesion: 0.09
+Nodes (34): LoginPage(), metadata, metadata, SignupPage(), SignupForm(), fontSans, metadata, RootLayout() (+26 more)
 
-### Community 2 - "app/layout.tsx"
-Cohesion: 0.12
-Nodes (14): AuthLayout(), DashboardLayout(), ErrorBoundary(), fontSans, metadata, RootLayout(), viewport, HomePage() (+6 more)
+### Community 2 - "Button"
+Cohesion: 0.24
+Nodes (9): AuthLayout(), ErrorBoundary(), NotFound(), HomePage(), Container(), ContainerProps, sizes, Button() (+1 more)
 
 ### Community 3 - "TypeScript Config"
 Cohesion: 0.10
@@ -182,7 +183,7 @@ Nodes (15): 7.10 Hoist RegExp Creation, 7.11 Use flatMap to Map and Filter in On
 
 ### Community 10 - "npm Scripts"
 Cohesion: 0.08
-Nodes (22): 3.3 Avoid Shared Module State for Request Data, 5.4 Don't Define Components Inside Components, Don't Define Components Inside Components, Hoist Static I/O to Module Level, Avoid Shared Module State for Request Data, Dashboard(), DashboardProps, accountLinks (+14 more)
+Nodes (23): DashboardLayout(), 3.3 Avoid Shared Module State for Request Data, 5.4 Don't Define Components Inside Components, Don't Define Components Inside Components, Hoist Static I/O to Module Level, Avoid Shared Module State for Request Data, Dashboard(), DashboardProps (+15 more)
 
 ### Community 11 - "Prettier Config"
 Cohesion: 0.25
@@ -192,9 +193,9 @@ Nodes (7): plugins, printWidth, semi, singleQuote, tailwindFunctions, tailwindSt
 Cohesion: 0.33
 Nodes (5): Centavos, ID, ISODateString, Paginated, UserRole
 
-### Community 14 - "next"
-Cohesion: 0.22
-Nodes (4): metadata, metadata, nextConfig, next
+### Community 13 - "6. Rendering Performance"
+Cohesion: 0.17
+Nodes (12): 6.10 Use React DOM Resource Hints, 6.11 Use useTransition Over Manual Loading States, 6.1 Animate SVG Wrapper Instead of SVG Element, 6.2 CSS content-visibility for Long Lists, 6.3 Hoist Static JSX Elements, 6.4 Optimize SVG Precision, 6.5 Prevent Hydration Mismatch Without Flickering, 6.6 Suppress Expected Hydration Mismatches (+4 more)
 
 ### Community 20 - "Quick Reference"
 Cohesion: 0.13
@@ -202,11 +203,7 @@ Nodes (14): 1. Eliminating Waterfalls (CRITICAL), 2. Bundle Size Optimization (C
 
 ### Community 21 - "6. Rendering Performance"
 Cohesion: 0.05
-Nodes (40): 1.1 Check Cheap Conditions Before Async Flags, 1.2 Defer Await Until Needed, 1.3 Dependency-Based Parallelization, 1.4 Prevent Waterfall Chains in API Routes, 1.5 Promise.all() for Independent Operations, 1.6 Strategic Suspense Boundaries, 1. Eliminating Waterfalls, 2.1 Avoid Barrel File Imports (+32 more)
-
-### Community 22 - "3. Server-Side Performance"
-Cohesion: 0.20
-Nodes (9): 3.10 Use after() for Non-Blocking Operations, 3.1 Authenticate Server Actions Like API Routes, 3.2 Avoid Duplicate Serialization in RSC Props, 3.4 Cross-Request LRU Caching, 3.5 Hoist Static I/O to Module Level, 3.6 Minimize Serialization at RSC Boundaries, 3.7 Parallel Data Fetching with Component Composition, 3.8 Parallel Nested Data Fetching (+1 more)
+Nodes (37): 1.1 Check Cheap Conditions Before Async Flags, 1.2 Defer Await Until Needed, 1.3 Dependency-Based Parallelization, 1.4 Prevent Waterfall Chains in API Routes, 1.5 Promise.all() for Independent Operations, 1.6 Strategic Suspense Boundaries, 1. Eliminating Waterfalls, 2.1 Avoid Barrel File Imports (+29 more)
 
 ### Community 23 - "Sections"
 Cohesion: 0.20
@@ -222,23 +219,23 @@ Nodes (3): File-System Paths, Import Paths, Prefer Statically Analyzable Paths
 
 ## Knowledge Gaps
 - **23 isolated node(s):** `react-dom`, `@tailwindcss/postcss`, `@types/node`, `@types/react`, `@types/react-dom` (+18 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 358 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
-- **71 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 360 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **73 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `React Best Practices` connect `6. Rendering Performance` to `7. JavaScript Performance`, `3. Server-Side Performance`, `5. Re-render Optimization`?**
-  _High betweenness centrality (0.099) - this node is a cross-community bridge._
+- **Why does `React Best Practices` connect `6. Rendering Performance` to `7. JavaScript Performance`, `6. Rendering Performance`, `5. Re-render Optimization`?**
+  _High betweenness centrality (0.098) - this node is a cross-community bridge._
 - **What connects `react-dom`, `@tailwindcss/postcss`, `@types/node` to the rest of the system?**
   _23 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Package Manifest & Media Hook` be split into smaller, more focused modules?**
   _Cohesion score 0.057057057057057055 - nodes in this community are weakly interconnected._
 - **Why does `5. Re-render Optimization` connect `5. Re-render Optimization` to `npm Scripts`, `6. Rendering Performance`?**
-  _High betweenness centrality (0.074) - this node is a cross-community bridge._
+  _High betweenness centrality (0.073) - this node is a cross-community bridge._
 - **Should `cn` be split into smaller, more focused modules?**
-  _Cohesion score 0.13107822410147993 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.09225589225589226 - nodes in this community are weakly interconnected._
 - **Why does `Avatar()` connect `npm Scripts` to `cn`?**
-  _High betweenness centrality (0.071) - this node is a cross-community bridge._
-- **Should `app/layout.tsx` be split into smaller, more focused modules?**
-  _Cohesion score 0.12 - nodes in this community are weakly interconnected._
+  _High betweenness centrality (0.070) - this node is a cross-community bridge._
+- **Should `TypeScript Config` be split into smaller, more focused modules?**
+  _Cohesion score 0.1 - nodes in this community are weakly interconnected._

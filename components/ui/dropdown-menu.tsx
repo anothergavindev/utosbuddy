@@ -60,7 +60,7 @@ export function Dropdown({ triggerLabel, trigger, children, className }: Dropdow
           <div
             id={menuId}
             role="menu"
-            className="absolute top-full left-0 z-50 mt-2 min-w-44 rounded-lg border bg-card py-1 shadow-sm"
+            className="absolute top-full right-0 z-50 mt-2 min-w-44 rounded-lg border bg-card py-1 shadow-sm"
           >
             {children}
           </div>
