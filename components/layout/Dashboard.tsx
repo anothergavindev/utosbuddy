@@ -4,10 +4,10 @@ import { Menu } from "lucide-react";
 import { useEffect, useState } from "react";
 
 import { accountLinks } from "@/config/nav";
-import { Sidebar } from "@/components/layout/sidebar";
-import { Avatar } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
-import { Dropdown, DropdownItem } from "@/components/ui/dropdown-menu";
+import { Sidebar } from "@/components/layout/Sidebar";
+import { Avatar } from "@/components/ui/Avatar";
+import { Button } from "@/components/ui/Button";
+import { Dropdown, DropdownItem } from "@/components/ui/DropdownMenu";
 
 type DashboardProps = {
   name: string;

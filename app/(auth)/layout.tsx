@@ -1,4 +1,4 @@
-import { Container } from "@/components/layout/container";
+import { Container } from "@/components/layout/Container";
 
 export default function AuthLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (

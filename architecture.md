@@ -65,6 +65,8 @@ Accounts, sessions, and PostgreSQL live in the sibling API repository `utosbuddy
 └── tsconfig.json               # TypeScript strict configuration
 ```
 
+**File naming:** React component files use PascalCase, matching their main export (`components/ui/Button.tsx`, `app/(auth)/signup/SignupForm.tsx`). Next.js route files (`page.tsx`, `layout.tsx`, `error.tsx`, `loading.tsx`, `not-found.tsx`), hooks, `lib/`, and `config/` use lowercase or kebab-case.
+
 ---
 
 ## 3. Routing & Navigation Architecture

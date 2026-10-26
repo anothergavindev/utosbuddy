@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 
-import { SignupForm } from "@/app/(auth)/signup/signup-form";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { SignupForm } from "@/app/(auth)/signup/SignupForm";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/Card";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = { title: "Sign up" };

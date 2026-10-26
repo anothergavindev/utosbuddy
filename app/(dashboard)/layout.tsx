@@ -1,4 +1,4 @@
-import { Dashboard } from "@/components/layout/dashboard";
+import { Dashboard } from "@/components/layout/Dashboard";
 import { siteConfig } from "@/config/site";
 
 export default function DashboardLayout({ children }: Readonly<{ children: React.ReactNode }>) {

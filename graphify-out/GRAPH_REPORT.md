@@ -1,24 +1,24 @@
-# Graph Report - utosbuddy  (2026-10-18)
+# Graph Report - utosbuddy  (2026-10-26)
 
 ## Corpus Check
-- 130 files · ~34,636 words
+- 133 files · ~34,691 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 7 file(s) not represented in the graph (top: (none) 5, .example 1, .css 1)
 
 ## Summary
-- 498 nodes · 585 edges · 97 communities (25 shown, 72 thin omitted)
+- 501 nodes · 592 edges · 94 communities (22 shown, 72 thin omitted)
 - Extraction: 97% EXTRACTED · 3% INFERRED · 0% AMBIGUOUS · INFERRED: 17 edges (avg confidence: 0.87)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `a589b999`
+- Built from commit: `ad3c2fa0`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - Package Manifest & Media Hook
 - cn
-- Button
+- Container
 - TypeScript Config
 - Architecture & Project Rules
 - Dev Dependencies
@@ -26,11 +26,11 @@
 - PH Locale Formatting
 - Grilling Skills Family
 - 7. JavaScript Performance
-- npm Scripts
+- Dashboard.tsx
 - Prettier Config
 - Shared Domain Types
 - 6. Rendering Performance
-- app/layout.tsx
+- Navbar.tsx
 - Server Components & Perf
 - Caveman Skill
 - Auth & Middleware
@@ -40,12 +40,9 @@
 - 3. Server-Side Performance
 - AGENTS.md
 - Sections
-- 1. Eliminating Waterfalls
-- 2. Bundle Size Optimization
 - React Best Practices
+- Spinner.tsx
 - React Best Practices
-- 4. Client-Side Data Fetching
-- 8. Advanced Patterns
 - async-cheap-condition-before-await.md
 - Prefer Statically Analyzable Paths
 - advanced-effect-event-deps.md
@@ -126,14 +123,14 @@
 10. `next` - 11 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `5.4 Don't Define Components Inside Components` --references--> `Avatar()`  [INFERRED]
-  .claude/skills/vercel-react-best-practices/AGENTS.md → components/ui/avatar.tsx
 - `3.3 Avoid Shared Module State for Request Data` --references--> `Dashboard()`  [INFERRED]
-  .claude/skills/vercel-react-best-practices/AGENTS.md → components/layout/dashboard.tsx
+  .claude/skills/vercel-react-best-practices/AGENTS.md → components/layout/Dashboard.tsx
 - `Avoid Shared Module State for Request Data` --references--> `Dashboard()`  [INFERRED]
-  .claude/skills/vercel-react-best-practices/rules/server-no-shared-module-state.md → components/layout/dashboard.tsx
+  .claude/skills/vercel-react-best-practices/rules/server-no-shared-module-state.md → components/layout/Dashboard.tsx
+- `5.4 Don't Define Components Inside Components` --references--> `Avatar()`  [INFERRED]
+  .claude/skills/vercel-react-best-practices/AGENTS.md → components/ui/Avatar.tsx
 - `Don't Define Components Inside Components` --references--> `Avatar()`  [INFERRED]
-  .claude/skills/vercel-react-best-practices/rules/rerender-no-inline-components.md → components/ui/avatar.tsx
+  .claude/skills/vercel-react-best-practices/rules/rerender-no-inline-components.md → components/ui/Avatar.tsx
 - `grill-me skill (cursor)` --semantically_similar_to--> `grilling skill`  [INFERRED] [semantically similar]
   .cursor/skills/grill-me/SKILL.md → .agents/skills/grill-with-docs/SKILL.md
 
@@ -144,19 +141,19 @@
 - **Security architecture layers** — architecture_middleware, architecture_auth, architecture_zod_validation, architecture_env_validation [EXTRACTED 1.00]
 - **Grilling interview skill family** — _agents_skills_grill_me_skill_grill_me, _agents_skills_grill_with_docs_skill_grill_with_docs, _cursor_skills_grill_me_skill_grill_me, _agents_skills_grill_with_docs_skill_grilling_skill [INFERRED 0.85]
 
-## Communities (97 total, 72 thin omitted)
+## Communities (94 total, 72 thin omitted)
 
 ### Community 0 - "Package Manifest & Media Hook"
 Cohesion: 0.06
 Nodes (35): dependencies, class-variance-authority, clsx, lucide-react, next, react, react-dom, tailwind-merge (+27 more)
 
 ### Community 1 - "cn"
-Cohesion: 0.11
-Nodes (30): LoginPage(), metadata, metadata, SignupPage(), SignupForm(), Loading(), Sidebar(), SidebarProps (+22 more)
+Cohesion: 0.15
+Nodes (26): LoginPage(), metadata, metadata, SignupPage(), SignupForm(), AvatarProps, Badge(), BadgeProps (+18 more)
 
-### Community 2 - "Button"
-Cohesion: 0.12
-Nodes (18): AuthLayout(), ErrorBoundary(), NotFound(), HomePage(), Container(), ContainerProps, sizes, ArrowRight() (+10 more)
+### Community 2 - "Container"
+Cohesion: 0.29
+Nodes (6): AuthLayout(), ErrorBoundary(), NotFound(), Container(), ContainerProps, sizes
 
 ### Community 3 - "TypeScript Config"
 Cohesion: 0.10
@@ -171,8 +168,8 @@ Cohesion: 0.17
 Nodes (12): devDependencies, eslint, eslint-config-next, eslint-config-prettier, prettier, prettier-plugin-tailwindcss, tailwindcss, @tailwindcss/postcss (+4 more)
 
 ### Community 6 - "5. Re-render Optimization"
-Cohesion: 0.12
-Nodes (16): 5.10 Subscribe to Derived State, 5.11 Use Functional setState Updates, 5.12 Use Lazy State Initialization, 5.13 Use Transitions for Non-Urgent Updates, 5.14 Use useDeferredValue for Expensive Derived Renders, 5.15 Use useRef for Transient Values, 5.1 Calculate Derived State During Rendering, 5.2 Defer State Reads to Usage Point (+8 more)
+Cohesion: 0.11
+Nodes (18): 5.10 Subscribe to Derived State, 5.11 Use Functional setState Updates, 5.12 Use Lazy State Initialization, 5.13 Use Transitions for Non-Urgent Updates, 5.14 Use useDeferredValue for Expensive Derived Renders, 5.15 Use useRef for Transient Values, 5.1 Calculate Derived State During Rendering, 5.2 Defer State Reads to Usage Point (+10 more)
 
 ### Community 7 - "PH Locale Formatting"
 Cohesion: 0.27
@@ -186,9 +183,9 @@ Nodes (7): Grill Me OpenAI agent interface, grill-me skill (agents), Grill with 
 Cohesion: 0.13
 Nodes (15): 7.10 Hoist RegExp Creation, 7.11 Use flatMap to Map and Filter in One Pass, 7.12 Use Loop for Min/Max Instead of Sort, 7.13 Use Set/Map for O(1) Lookups, 7.14 Use toSorted() Instead of sort() for Immutability, 7.1 Avoid Layout Thrashing, 7.2 Build Index Maps for Repeated Lookups, 7.3 Cache Property Access in Loops (+7 more)
 
-### Community 10 - "npm Scripts"
-Cohesion: 0.09
-Nodes (17): DashboardLayout(), 3.3 Avoid Shared Module State for Request Data, Don't Define Components Inside Components, Hoist Static I/O to Module Level, Avoid Shared Module State for Request Data, Dashboard(), DashboardProps, Avatar() (+9 more)
+### Community 10 - "Dashboard.tsx"
+Cohesion: 0.07
+Nodes (19): metadata, metadata, 3.3 Avoid Shared Module State for Request Data, Hoist Static I/O to Module Level, Avoid Shared Module State for Request Data, Dashboard(), DashboardProps, Sidebar() (+11 more)
 
 ### Community 11 - "Prettier Config"
 Cohesion: 0.25
@@ -202,9 +199,9 @@ Nodes (5): Centavos, ID, ISODateString, Paginated, UserRole
 Cohesion: 0.17
 Nodes (12): 6.10 Use React DOM Resource Hints, 6.11 Use useTransition Over Manual Loading States, 6.1 Animate SVG Wrapper Instead of SVG Element, 6.2 CSS content-visibility for Long Lists, 6.3 Hoist Static JSX Elements, 6.4 Optimize SVG Precision, 6.5 Prevent Hydration Mismatch Without Flickering, 6.6 Suppress Expected Hydration Mismatches (+4 more)
 
-### Community 14 - "app/layout.tsx"
-Cohesion: 0.13
-Nodes (9): metadata, metadata, fontSans, metadata, RootLayout(), viewport, Providers(), nextConfig (+1 more)
+### Community 14 - "Navbar.tsx"
+Cohesion: 0.11
+Nodes (18): DashboardLayout(), fontSans, metadata, RootLayout(), viewport, HomePage(), ArrowRightIcon(), BrandMarkIcon() (+10 more)
 
 ### Community 20 - "Quick Reference"
 Cohesion: 0.13
@@ -218,29 +215,17 @@ Nodes (9): 3.10 Use after() for Non-Blocking Operations, 3.1 Authenticate Server
 Cohesion: 0.20
 Nodes (9): 1. Eliminating Waterfalls (async), 2. Bundle Size Optimization (bundle), 3. Server-Side Performance (server), 4. Client-Side Data Fetching (client), 5. Re-render Optimization (rerender), 6. Rendering Performance (rendering), 7. JavaScript Performance (js), 8. Advanced Patterns (advanced) (+1 more)
 
-### Community 24 - "1. Eliminating Waterfalls"
-Cohesion: 0.29
-Nodes (7): 1.1 Check Cheap Conditions Before Async Flags, 1.2 Defer Await Until Needed, 1.3 Dependency-Based Parallelization, 1.4 Prevent Waterfall Chains in API Routes, 1.5 Promise.all() for Independent Operations, 1.6 Strategic Suspense Boundaries, 1. Eliminating Waterfalls
+### Community 24 - "React Best Practices"
+Cohesion: 0.07
+Nodes (28): 1.1 Check Cheap Conditions Before Async Flags, 1.2 Defer Await Until Needed, 1.3 Dependency-Based Parallelization, 1.4 Prevent Waterfall Chains in API Routes, 1.5 Promise.all() for Independent Operations, 1.6 Strategic Suspense Boundaries, 1. Eliminating Waterfalls, 2.1 Avoid Barrel File Imports (+20 more)
 
-### Community 25 - "2. Bundle Size Optimization"
-Cohesion: 0.29
-Nodes (7): 2.1 Avoid Barrel File Imports, 2.2 Conditional Module Loading, 2.3 Defer Non-Critical Third-Party Libraries, 2.4 Dynamic Imports for Heavy Components, 2.5 Prefer Statically Analyzable Paths, 2.6 Preload Based on User Intent, 2. Bundle Size Optimization
+### Community 25 - "Spinner.tsx"
+Cohesion: 0.60
+Nodes (3): Loading(), sizes, Spinner()
 
 ### Community 26 - "React Best Practices"
 Cohesion: 0.33
 Nodes (5): Creating a New Rule, Getting Started, React Best Practices, Rule File Structure, Structure
-
-### Community 27 - "React Best Practices"
-Cohesion: 0.40
-Nodes (4): Abstract, React Best Practices, References, Table of Contents
-
-### Community 28 - "4. Client-Side Data Fetching"
-Cohesion: 0.40
-Nodes (5): 4.1 Deduplicate Global Event Listeners, 4.2 Use Passive Event Listeners for Scrolling Performance, 4.3 Use SWR for Automatic Deduplication, 4.4 Version and Minimize localStorage Data, 4. Client-Side Data Fetching
-
-### Community 29 - "8. Advanced Patterns"
-Cohesion: 0.40
-Nodes (5): 8.1 Do Not Put Effect Events in Dependency Arrays, 8.2 Initialize App Once, Not Per Mount, 8.3 Store Event Handlers in Refs, 8.4 useEffectEvent for Stable Callback Refs, 8. Advanced Patterns
 
 ### Community 31 - "Prefer Statically Analyzable Paths"
 Cohesion: 0.50
@@ -254,17 +239,17 @@ Nodes (3): File-System Paths, Import Paths, Prefer Statically Analyzable Paths
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `React Best Practices` connect `React Best Practices` to `5. Re-render Optimization`, `7. JavaScript Performance`, `6. Rendering Performance`, `3. Server-Side Performance`, `1. Eliminating Waterfalls`, `2. Bundle Size Optimization`, `4. Client-Side Data Fetching`, `8. Advanced Patterns`?**
+- **Why does `React Best Practices` connect `React Best Practices` to `7. JavaScript Performance`, `6. Rendering Performance`, `3. Server-Side Performance`, `5. Re-render Optimization`?**
   _High betweenness centrality (0.099) - this node is a cross-community bridge._
 - **What connects `react-dom`, `@tailwindcss/postcss`, `@types/node` to the rest of the system?**
   _23 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Package Manifest & Media Hook` be split into smaller, more focused modules?**
   _Cohesion score 0.057057057057057055 - nodes in this community are weakly interconnected._
 - **Why does `5. Re-render Optimization` connect `5. Re-render Optimization` to `React Best Practices`?**
-  _High betweenness centrality (0.075) - this node is a cross-community bridge._
-- **Should `cn` be split into smaller, more focused modules?**
-  _Cohesion score 0.11436170212765957 - nodes in this community are weakly interconnected._
-- **Why does `Avatar()` connect `npm Scripts` to `cn`, `5. Re-render Optimization`?**
-  _High betweenness centrality (0.073) - this node is a cross-community bridge._
-- **Should `Button` be split into smaller, more focused modules?**
-  _Cohesion score 0.12307692307692308 - nodes in this community are weakly interconnected._
+  _High betweenness centrality (0.076) - this node is a cross-community bridge._
+- **Should `TypeScript Config` be split into smaller, more focused modules?**
+  _Cohesion score 0.1 - nodes in this community are weakly interconnected._
+- **Why does `Avatar()` connect `5. Re-render Optimization` to `cn`, `Dashboard.tsx`?**
+  _High betweenness centrality (0.074) - this node is a cross-community bridge._
+- **Should `5. Re-render Optimization` be split into smaller, more focused modules?**
+  _Cohesion score 0.10526315789473684 - nodes in this community are weakly interconnected._

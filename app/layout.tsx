@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 
-import { Providers } from "@/components/providers/providers";
+import { Providers } from "@/components/providers/Providers";
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 

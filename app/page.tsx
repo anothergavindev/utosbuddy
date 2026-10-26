@@ -1,4 +1,4 @@
-import { Container } from "@/components/layout/container";
+import { Container } from "@/components/layout/Container";
 import { Navbar } from "@/components/layout/Navbar";
 import { siteConfig } from "@/config/site";
 
